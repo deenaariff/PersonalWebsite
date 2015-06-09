@@ -5,9 +5,13 @@
 
 /* Body */
 
-body {
+html, body {
 	height: 100%;
 	width: 100%;
 	margin: 100%;
+}
+
+.col-sm-6 {
+	height: 100%;
 }
 
