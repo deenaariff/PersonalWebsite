@@ -4,9 +4,8 @@ html, body {
 }
 
 .container-fluid {
-	background-image: url("/Users/deenaariff/dev/Personal-Website/Background.jpg");
-	background-size: 100%;
-    	background-repeat: no-repeat;
+	width: auto;
+	height: auto;
 }
 
 /* Header */
@@ -16,15 +15,28 @@ html, body {
 
 /* Body */
 
+
 #Profile {
-	text-align: center;
 	color: #FFF2E7;
+	text-align: center;
+	height: 100%;
+	background-color: #000000;
 }
 
 #Profile h1 {
-	font-family:"Josefin Slab",arial,'sans serif'; 
+	font-family: Josefin Slab,'sans serif'; 
 	font-size: 5vw;
-	color: #05395e;
+	color: #ffffff;
+}
+
+#Profile h2 {
+	font-family: Josefin Slab, 'sans serif';
+	font-size: 2vw;
+}
+
+#Summary p {
+	text-align: left;
+	padding: 25px 25px;
 }
 
 #Menu {
@@ -33,10 +45,17 @@ html, body {
 }
 
 #Summary {
-	height: 40%;
-	width: 40%;
-	background-color: blue;
-	opacity: 30%;
+	height: auto;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.button-slanted #Summary {
+	background-color: rgba(114, 174, 214, 0.85);
+
 }
 
 #Menu li {
@@ -45,4 +64,20 @@ html, body {
 
 .container-fluid h1 {
 	
+}
+
+.button-slanted {
+  	transform: skew(-20deg);
+	height: auto;
+	width: auto;
+	padding: 5px 5px;
+}
+
+#Picture {
+	background-image: url("/Users/deenaariff/dev/Personal-Website/Background_2.jpg");
+	background-size: 100%;
+    	background-repeat: no-repeat;
+	height: auto;
+	width: auto;
+
 }
