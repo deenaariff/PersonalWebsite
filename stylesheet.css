@@ -1,7 +1,6 @@
 html, body {
 	height: 100%;
-	width: 100%;
-	margin: 100%;
+       	width: 100%;
 }
 
 /* Header */
@@ -13,10 +12,25 @@ html, body {
 
 #Profile {
 	height: 100%;
+	background-color: #FFF2E7;
+	text-align: center;
+}
+
+#Profile h1 {
+	font-family:"lucida calligraphy",arial,'sans serif'; 
+	font-size: 5vw;
 }
 
 #Menu {
 	height: 100%;
+	background-color: #0d0020;
+	color: #FFF2E7;
 }
 
+#Menu li {
+	font-size: 2vw;
+}
 
+.container-fluid h1 {
+	
+}
