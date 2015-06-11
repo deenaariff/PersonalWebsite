@@ -1,6 +1,12 @@
 html, body {
-	height: 100%;
        	width: 100%;
+	margin: 0%;
+}
+
+.container-fluid {
+	background-image: url("/Users/deenaariff/dev/Personal-Website/Background.jpg");
+	background-size: 100%;
+    	background-repeat: no-repeat;
 }
 
 /* Header */
@@ -11,20 +17,26 @@ html, body {
 /* Body */
 
 #Profile {
-	height: 100%;
-	background-color: #FFF2E7;
 	text-align: center;
+	color: #FFF2E7;
 }
 
 #Profile h1 {
-	font-family:"lucida calligraphy",arial,'sans serif'; 
+	font-family:"Josefin Slab",arial,'sans serif'; 
 	font-size: 5vw;
+	color: #05395e;
 }
 
 #Menu {
-	height: 100%;
-	background-color: #0d0020;
 	color: #FFF2E7;
+	text-align: center;
+}
+
+#Summary {
+	height: 40%;
+	width: 40%;
+	background-color: blue;
+	opacity: 30%;
 }
 
 #Menu li {
