@@ -1,3 +1,9 @@
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 100%;
+}
+
 /* Header */
 
 
@@ -5,13 +11,12 @@
 
 /* Body */
 
-html, body {
+#Profile {
 	height: 100%;
-	width: 100%;
-	margin: 100%;
 }
 
-.col-sm-6 {
+#Menu {
 	height: 100%;
 }
+
 
