@@ -1,0 +1,59 @@
+.home .body {
+	width: 100%;
+	display: inline-block;
+	background-color: #000000;
+}
+
+h1 {
+	opacity: 80%;
+}
+
+#panel-1 { 
+	height: 850px;
+	background-image: url(sf.jpeg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 65vw;
+}
+
+#log img,h2,p{
+	display: inline;
+	float: left;
+}
+
+#logo h2, p {
+	color: #ffffff;
+}
+
+#logo img {
+	width: auto;
+	height: 30%;
+	border-radius: 50%;
+}
+
+#panel-2 {
+	height: 850px;
+	background-image: url(ape.jpeg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 65vw;
+}
+
+
+#panel-2 h1{
+	color: #ffffff;	
+	font-size: 400%;
+}
+
+#panel-3 {
+	height: 850px;
+	background-image: url(book.jpeg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 65vw;
+}
+
+#panel-3 h1{
+	color: #ffffff;	
+	font-size: 400%;
+}
