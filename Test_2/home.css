@@ -13,6 +13,7 @@ h1 {
 	background-image: url(sf.jpeg);
 	background-repeat: no-repeat;
 	background-size: 100%;
+<<<<<<< HEAD
 	height: 65vw;
 }
 
@@ -29,6 +30,9 @@ h1 {
 	width: auto;
 	height: 30%;
 	border-radius: 50%;
+=======
+	height: 65vw
+>>>>>>> 00beeb914d127f99358a95c717544cd546fd29e7
 }
 
 #panel-2 {
@@ -36,10 +40,16 @@ h1 {
 	background-image: url(ape.jpeg);
 	background-repeat: no-repeat;
 	background-size: 100%;
+<<<<<<< HEAD
 	height: 65vw;
 }
 
 
+=======
+	height: 65vw
+}
+
+>>>>>>> 00beeb914d127f99358a95c717544cd546fd29e7
 #panel-2 h1{
 	color: #ffffff;	
 	font-size: 400%;
@@ -50,7 +60,11 @@ h1 {
 	background-image: url(book.jpeg);
 	background-repeat: no-repeat;
 	background-size: 100%;
+<<<<<<< HEAD
 	height: 65vw;
+=======
+	height: 65vw
+>>>>>>> 00beeb914d127f99358a95c717544cd546fd29e7
 }
 
 #panel-3 h1{
