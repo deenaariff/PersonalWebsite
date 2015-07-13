@@ -4,6 +4,11 @@
 	background-color: #000000;
 }
 
+.head .header #navbar {
+	height: 200px;
+	background-color: solid red;
+}
+
 h1 {
 	opacity: 80%;
 }
@@ -13,8 +18,15 @@ h1 {
 	background-image: url(sf.jpeg);
 	background-repeat: no-repeat;
 	background-size: 100%;
-<<<<<<< HEAD
 	height: 65vw;
+}
+
+.logo {
+	height: 80%;
+}
+
+#profile #profile-info {
+	
 }
 
 #log img,h2,p{
@@ -27,10 +39,9 @@ h1 {
 }
 
 #logo img {
-	width: auto;
-	height: 30%;
 	border-radius: 50%;
-	height: 65vw
+	width: 30%;
+	height: auto;
 }
 
 #panel-2 {
