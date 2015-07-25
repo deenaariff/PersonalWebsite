@@ -1,6 +1,5 @@
 .home .body {
 	width: 100%;
-	background-color: #ffffff;
 }
 
 #header { 
@@ -10,8 +9,9 @@
 #navbar {
 	text-align: center;
 	height: 100px;
-	background-color: #ffffff;
-	color: #36454f;
+	background-color: #34314C;
+	color: #ffffff;
+	font-family: 'Poiret One', cursive;
 }
 
 #navbar .col-xs-12 {
@@ -19,7 +19,6 @@
 	margin-top: auto;
 	margin-bottom: auto;
 	display:inline-block;
-	color: #36454f;
 	font-size: 170%;
 	text-align: center;
 }
@@ -28,6 +27,7 @@
 .btn{
 	text-decoration:none;
 	color:#333333;
+	font-family: 'Poiret One', cursive;
 	font-size:20px;
 	font-weight:bold;
 	line-height:32px;
@@ -45,11 +45,35 @@
 	background-color:#ea6360;
 }
 
+.btnHollow {
+	 font-family: 'Poiret One', cursive;
+     background:  rgba(255, 255, 255, 0.3);
+     height:  50px;
+     line-height:  40px;
+     display:  inline-block;
+     float:  none;
+     text-align:  center;
+     width:  200px;
+     padding:  0px!important;
+     margin-right: 0.5px;
+     margin-left: 0.5px;
+     font-size:  20px;
+     color:  #fff;
+ }
+
+.btnHollow:hover  {
+     color:  #fff;
+     text-decoration: none;
+     background: #FF7260;
+ }
 
 #panel-header {
-	text-align: center;
 	margin-top: 0.5%;
 	margin-bottom: 0.5%;
+	text-align: center;
+	font-family: 'Poiret One', cursive;
+	background-color: #ffffff;
+	color: #5E7583;
 }
 
 
@@ -59,15 +83,11 @@
 	background-repeat: no-repeat;
 	background-size: 100%;
 	height: 35vw;
-
-	-webkit-filter: blur(5px);
- 	 -moz-filter: blur(5px);
-  	-o-filter: blur(5px);
-  	-ms-filter: blur(5px);
-  	filter: blur(5px);
+	filter: grayscale(100%);
 }
 
 .profile-info {
+	display: inline-block;
 	margin-top: 50px; 
 	height: 50%;
 }
@@ -79,28 +99,33 @@
 
 #profile {
 	width: 50%;
-	text-align: center;
+	text-align: right;
+	padding-right:  10px;
 }
 
 #profile img {
 	border-radius: 50%;
-	width: 70%;
+	margin-top: 10%;
+	width: 50%;
 	height: auto;
 }
 
 #title1 {
 	width: 50%;
-	margin-left: 10px;
+	padding-left: 10px;
 }
 
 #title1 h1 {
-	font-size: 40px;
-	color: red;
+	margin-top: 20%;
+	font-family: 'Poiret One', cursive;
+	font-size: 60px;
+	color: 34314C;
 }
 
 #title1 p {
-	font-size: 20px;
-	color: black;
+	font-family: 'Poiret One', cursive;
+	font-size: 30x;
+	color: 802B32;
 }
 
 #buttons {
@@ -138,9 +163,8 @@
 }
 
 #content2 {
-	opacity: 0.1;
+	background:  rgba(255, 255, 255, 0.3);
 	height: 70%;
-	background-color: #000000;
 }
 
 
