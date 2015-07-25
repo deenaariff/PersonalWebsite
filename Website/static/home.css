@@ -15,7 +15,7 @@ h1 {
 
 #panel-1 { 
 	height: 850px;
-	background-image: url(sf.jpeg);
+	background-image: url(../images/sf.jpeg);
 	background-repeat: no-repeat;
 	background-size: 100%;
 	height: 65vw;
@@ -46,7 +46,7 @@ h1 {
 
 #panel-2 {
 	height: 850px;
-	background-image: url(ape.jpeg);
+	background-image: url(../images/ape.jpeg);
 	background-repeat: no-repeat;
 	background-size: 100%;
 	height: 65vw;
@@ -60,7 +60,7 @@ h1 {
 
 #panel-3 {
 	height: 850px;
-	background-image: url(book.jpeg);
+	background-image: url(../images/book.jpeg);
 	background-repeat: no-repeat;
 	background-size: 100%;
 	height: 65vw;
