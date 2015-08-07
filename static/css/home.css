@@ -105,30 +105,24 @@ body {
 }
 
 #intro-info img {
+	margin-top: 12%;
 	border-radius: 60%;
 	border: 3px solid #1A2129;
-	width: 15%;
+	width: 30%;
 	height: auto;
 	text-align: center;
 }
 
 #intro-info h1 {
 	font-size: 3em;
-	color: #1A2129;
-	padding: 1%;
-	display: inline-block;
-}
-
-#intro-info h2 {
-	font-size: 3em;
 	color: #fff;
-	display: inline-block;
+	display: block;
 	padding: 1%;
 }
 
 #intro-info p {
-	color: #FD334F;
-	font-size: 2.2em;
+	color: #efefef;
+	font-size: 2.0em;
 }
 
 #intro-info a {
@@ -147,7 +141,6 @@ body {
 #buttons li {
 	margin-top: 0.5%;
 	list-style-type: none;
-	display: inline-block;
 	font-size: 0.05em;
 	color: #FF7260;
 	padding-right: 5%;
@@ -197,10 +190,10 @@ body {
 
 #panel-2 {
 	height: 850px;
-	background: #F1F1F1;
+	background: #1A1A1A;
 	background-repeat: no-repeat;
 	background-size: 100%;
-	height: 40vw;
+	height: 48vw;
 }
 
 
