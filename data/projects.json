@@ -1,0 +1,22 @@
+[
+	{
+		name: 'HealInitiative.Org'
+		id: 1,
+		year: 2015,
+		description: 'Many of the leading causes of death
+		              – such as diabetes, heart disease, stroke,
+		               and cancer – in resource-poor countries 
+		               today are preventable and/or treatable, 
+		               and have been for decades. Additionally, 
+		               as the world develops and changes, the 
+		               medical paradigm has shifted; rather 
+		               than responding primarily to humanitarian 
+		               emergencies and infectious diseases, 
+		               health care providers must now also focus 
+		               on managing chronic illnesses and creating 
+		               sustainable health systems. The Heal Initiative
+		               exists to consistently deliver care to those 
+		               in need.'
+		image: '../../static/images/heal.jpg',
+	}
+]
