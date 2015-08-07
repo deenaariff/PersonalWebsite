@@ -94,7 +94,7 @@ body {
 	/*background-image: url(../images/sf.jpeg);*/
 	background-repeat: no-repeat;
 	background-size: 100%;
-	height: 48vw;
+	height: 60vw;
     padding-top: 8%;
 	filter: grayscale(100%);
 	font-family: 'Poiret One', cursive;
@@ -108,13 +108,13 @@ body {
 	margin-top: 12%;
 	border-radius: 60%;
 	border: 3px solid #1A2129;
-	width: 30%;
+	width: 40%;
 	height: auto;
 	text-align: center;
 }
 
 #intro-info h1 {
-	font-size: 3em;
+	font-size: 4em;
 	color: #fff;
 	display: block;
 	padding: 1%;
@@ -122,7 +122,7 @@ body {
 
 #intro-info p {
 	color: #efefef;
-	font-size: 2.0em;
+	font-size: 2.5em;
 }
 
 #intro-info a {
