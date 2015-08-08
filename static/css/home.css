@@ -136,16 +136,9 @@ body {
 #intro-info a:hover {
 	text-decoration: none;
 	color: #FD334F;
+	font-size: 2.2em;
 }
 
-#buttons li {
-	margin-top: 0.5%;
-	list-style-type: none;
-	font-size: 0.05em;
-	color: #FF7260;
-	padding-right: 5%;
-	padding-left: 5%;
-}
 
 #buttons img {
 	text-align: center;
@@ -166,6 +159,31 @@ body {
 	background-image: url('../images/bridge.jpg');
 	background-repeat: none;
 	background-size: 100%;
+}
+
+#objects ul {
+	margin-top: 10%;
+	width: 100%;
+	height: 80%;
+	margin-bottom: 10%;
+}
+
+#objects button {
+	font-family: 'Poiret One', cursive;
+	width: 60%;
+	font-size: 1.5em;
+	background: #FD334F;
+	color: #fff;
+	text-align: center;
+	box-shadow: none;
+	padding: 0;
+	border: none;
+
+}
+
+#objects button:hover {
+	color: #fff;
+    background: #FD334F;
 }
 
 #panel-header{
