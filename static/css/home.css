@@ -40,11 +40,6 @@ body {
 	height: 90px;
 }
 
-#Login {
-	background-color: #FD334F;
-	color: #1A2129;
-}
-
 #navbar button:hover {
     background-color: #fff;
     color: #FD334F;
@@ -52,6 +47,16 @@ body {
 
 #navbar button:focus {
     outline: 0;
+}
+
+#navbar #login {
+	background-color: #1CAC78;
+	color: #fff;
+}
+
+#navbar #login:hover {
+	background-color: #000000;
+	color: #fff;
 }
 
 .btnHollow {

@@ -1,0 +1,36 @@
+extends layout
+
+block content
+    div= navbar
+        button= About
+            img= src="../images/bridge.png"
+        button 
+            h1= {{ Button.name }}
+        button= login
+            h1= Login
+    div= intro-info
+        div
+            img= src="../images/hacktx.jpg"
+            h1= Deen Aariff
+            p= Student | Programmer | Techie 
+        div 
+            ul 
+                a ng-repeat= link in links
+    div= panel 1
+        div= objects
+            ul
+                button 
+        div= panel-header
+            div= title1
+                h1= {{ HeaderOne }}
+            div= discription1
+    div= panel-header
+        h1= {{ HeaderTwo }}
+    div= panel-2
+    div= panel-header
+        h1= {{ Header Three }}
+    div= panel-3
+        div= content
+        div= content
+     
+        

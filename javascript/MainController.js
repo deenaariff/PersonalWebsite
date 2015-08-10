@@ -11,7 +11,6 @@ angular
 	        {name:'Projects'},
 	        {name:'Design'},
 	        {name:'Contact'},
-	        {name:'Login'},
 	    ];
 	    $scope.links = [
 	        {name:'LinkedIn', link: "LinkedIn.com"},
