@@ -1,33 +1,27 @@
-angular
+var myApp = angular.module('myApp', ['app.services'])
 
-    .module('myApp', ['app.services'])
+myApp.controller('MainCtrl', function($scope, Products) {
+	$scope.HeaderOne = "Projects";
+	$scope.HeaderTwo = "Designs";
+	$scope.HeaderThree = "Contact Me";
+    $scope.buttons = [
+        {name:'Intro'},
+        {name:'Projects'},
+        {name:'Design'},
+        {name:'Contact'},
+    ];
+    $scope.links = [
+        {name:'LinkedIn', link: "LinkedIn.com"},
+        {name:'GitHub', link: "Github.com/deenaariff"},
+        {name:'Youtube', link: "youtube.com"},
+        {name:'Facebook', link: "https://facebook.com/deen.aariff"},
+        {name:'Email', link: "https://facebook.com/deen.aariff"},
+    ];
 
-	.controller('MainCtrl', function($scope, Products) {
-		$scope.HeaderOne = "Projects";
-		$scope.HeaderTwo = "Designs";
-		$scope.HeaderThree = "Contact Me";
-	    $scope.buttons = [
-	        {name:'Intro'},
-	        {name:'Projects'},
-	        {name:'Design'},
-	        {name:'Contact'},
-	    ];
-	    $scope.links = [
-	        {name:'LinkedIn', link: "LinkedIn.com"},
-	        {name:'GitHub', link: "Github.com/deenaariff"},
-	        {name:'Youtube', link: "youtube.com"},
-	        {name:'Facebook', link: "https://facebook.com/deen.aariff"},
-	        {name:'Email', link: "https://facebook.com/deen.aariff"},
-	    ];
-
-	    // getJSON
-	    Products.get().then(function (products) {
-       		 $scope.products = products;
-   		});
-
-	    $scope.productTitle = "Click a Project to Learn More";
-	    $scope.date = "";
-	    $scope.description = "";
+    // getJSON
+    Products.get().then(function (products) {
+   		 $scope.products = products;
+	});
 });
 
 

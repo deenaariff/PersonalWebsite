@@ -1,11 +1,9 @@
-angular
+var myApp = angular.module('myApp', ['app.services'])
 
-    .module('myApp', ['app.services'])
-
-    .factory('Products', function ($http) {
-	    return {
-	        get: function () {
-	            return $http.get('../data/projects.json');
-	        }
-	   	};
-)};
+myApp.factory('Products', function ($http) {
+    return {
+        get: function () {
+            return $http.get('../data/projects.json');
+        }
+   	};
+});
