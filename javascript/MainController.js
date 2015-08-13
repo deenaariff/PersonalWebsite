@@ -19,8 +19,8 @@ myApp.controller('MainCtrl', function($scope, Products) {
     ];
 
     // getJSON
-    Products.get().then(function (products) {
-   		 $scope.products = products;
+   	$scope.products = Products.products());
+
 	});
 });
 

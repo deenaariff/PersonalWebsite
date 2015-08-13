@@ -1,9 +1,12 @@
 var myApp = angular.module('myApp', ['app.services'])
 
-myApp.factory('Products', function ($http) {
-    return {
-        get: function () {
-            return $http.get('../data/projects.json');
-        }
-   	};
+myApp.service('Products', function ( {
+     
+    this.products = function () {
+
+    	var a = ['product1', 'product2', 'product3']; 
+    	return a;
+
+    };
+     
 });
