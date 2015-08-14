@@ -1,3 +1,3 @@
-var myApp = angular.module('myApp', ['app.services'])
+var myApp = angular.module('myApp', ['Controllers'])
 
 	

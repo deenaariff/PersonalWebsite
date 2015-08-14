@@ -54,10 +54,12 @@ body {
 	color: #fff;
 }
 
+/*
 #navbar #login:hover {
 	background-color: #000000;
 	color: #fff;
 }
+*/
 
 .btnHollow {
 	 font-family: 'Poiret One', cursive;
@@ -177,7 +179,7 @@ body {
 	font-family: 'Poiret One', cursive;
 	width: 60%;
 	font-size: 1.5em;
-	background: #FD334F;
+	background:  rgba(255, 255, 255, 0.4);
 	color: #fff;
 	text-align: center;
 	box-shadow: none;

@@ -1,6 +1,6 @@
-var myApp = angular.module('myApp', ['app.services'])
+var Controllers = angular.module('Controllers', ['Services'])
 
-myApp.controller('MainCtrl', function($scope, Products) {
+Controllers.controller('MainCtrl', function($scope, ProjectsService) {
 	$scope.HeaderOne = "Projects";
 	$scope.HeaderTwo = "Designs";
 	$scope.HeaderThree = "Contact Me";
@@ -10,6 +10,7 @@ myApp.controller('MainCtrl', function($scope, Products) {
         {name:'Design'},
         {name:'Contact'},
     ];
+
     $scope.links = [
         {name:'LinkedIn', link: "LinkedIn.com"},
         {name:'GitHub', link: "Github.com/deenaariff"},
@@ -19,9 +20,9 @@ myApp.controller('MainCtrl', function($scope, Products) {
     ];
 
     // getJSON
-   	$scope.products = Products.products());
+   	$scope.projects = ProjectsService.getProjects();
 
-	});
 });
+
 
 

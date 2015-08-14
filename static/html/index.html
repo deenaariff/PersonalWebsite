@@ -25,6 +25,7 @@
         <!-- Styles -->
 
         <link rel="stylesheet" type="text/css" href="../css/home.css">
+        <link rel="stylesheet" type="text/css" href="../css/hover.css">
         <link rel="stylesheet" href="../css/bootstrap-3.3.5-dist/css/bootstrap.min.css">
         <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
 
@@ -39,7 +40,7 @@
         <button class = "col-xs-2" id = "Programming" ng-repeat = "button in buttons">
                 <h1> {{button.name}} </h1>
         </button>
-        <button class = "col-xs-2" id = "login" >
+        <button class = "col-xs-2 hvr-bounce-to-top" id = "login" >
                 <h1> Login </h1>
         </button>
     </div>
@@ -69,12 +70,12 @@
 		<div id = "panel-1">
             <div class = "col-xs-12 col-md-6" id = "objects">
                 <ul>
-                    <button ng-repeat = "product in products">{{product.title}}</button>
+                    <button class = "hvr-grow" ng-repeat = "project in projects">{{ project }}</button>
                 </ul>
             </div>
             <div class = "col-xs-12 col-md-6" id = "panel-header">
                 <div id = "title1">
-                    <h1> {{ HeaderOne }}</h1>
+                    <h1>{{ HeaderOne }}</h1>
                 </div>
                 <div id = "description1">
                 </div>
@@ -85,7 +86,7 @@
 		<!-- Primal Designs -->
 
 		<div class = "col-xs-12" id = "panel-header">
-			<h1>{{ HeaderTwo}}</h1>
+			<h1>{{ HeaderTwo }}</h1>
 		</div>
 
 		<!-- Panel 2-->

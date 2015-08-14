@@ -1,12 +1,13 @@
-var myApp = angular.module('myApp', ['app.services'])
+var Services = angular.module('Services',[])
 
-myApp.service('Products', function ( {
+Services.factory('ProjectsService', function () {
      
-    this.products = function () {
+    	var projects = ['project1', 'project2', 'project3']; 
 
-    	var a = ['product1', 'product2', 'product3']; 
-    	return a;
+   	    return {
+   	    	getProjects : function () {
+   	    		return projects;
+   	   	    }	
+   	   	};
 
-    };
-     
 });
