@@ -1,6 +1,6 @@
 var Controllers = angular.module('Controllers', ['Services'])
 
-Controllers.controller('MainCtrl', function($scope, ProjectsService) {
+Controllers.controller('MainCtrl', function($scope, ProjectsService, Test) {
 	$scope.HeaderOne = "Projects";
 	$scope.HeaderTwo = "Designs";
 	$scope.HeaderThree = "Contact Me";
@@ -20,7 +20,7 @@ Controllers.controller('MainCtrl', function($scope, ProjectsService) {
     ];
 
     // getJSON
-   	$scope.projects = ProjectsService.getProjects();
+   	$scope.projects = Test.getProjects();
 
 });
 

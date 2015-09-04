@@ -7,17 +7,29 @@ html {
 }
 
 body {
+	font-family: Gotham-Light;
 }
 
 @font-face {
-        url('../fonts/Chelsea.ttf')  format('truetype'), 
-        font-family: 'Burner';
+    url('../fonts/Chelsea.ttf')  format('truetype'), 
+    font-family: 'Burner';
 }
+
+@font-face {
+    url('../fonts/Gotham-Medium.otf')  format('truetype'), 
+    font-family: 'Gotham-Medium';
+}
+
+@font-face {
+    url('../fonts/Gotham-Light.otlf')  format('truetype'), 
+    font-family: 'Gotham-Light';
+}
+
 
 #navbar {
 	text-align: center;
 	height: 80px;
-	background-color: #fff; 
+	background-color: red; 
 	color: #1A1A1A;
     position: fixed;
     z-index: 100;
@@ -30,7 +42,6 @@ body {
 #navbar button {
 	background:  #fff;
 	font-size: 1em;
-	font-family: 'Poiret One', cursive;
     height: 100%;
     color: #1A1A1A;
     border: none;
@@ -62,7 +73,6 @@ body {
 */
 
 .btnHollow {
-	 font-family: 'Poiret One', cursive;
 	 background: #FD334F;
      height:  40px;
      line-height:  40px;
@@ -89,22 +99,19 @@ body {
 	color: #1A1A1A;
     height: 7vw;
     font-size: 1em;
-    font-family: 'Poiret One', cursive;
     height: auto;
 }
 
 
 #intro-info { 
     text-align: center;
-	height: 850px;
+	height: auto;
     background: #1A1A1A;
-	/*background-image: url(../images/sf.jpeg);*/
 	background-repeat: no-repeat;
 	background-size: 100%;
 	height: 60vw;
     padding-top: 8%;
 	filter: grayscale(100%);
-	font-family: 'Poiret One', cursive;
 }
 
 .hello {
@@ -152,6 +159,18 @@ body {
 
 }
 
+#about p {
+	font-size: 1em;
+	text-align: center;
+	padding: 5%;
+}
+
+/*------------------------------
+
+PANEL 1
+
+-------------------------------*/
+
 #panel-1 {
 	height: 850px; 
     background:  #F4F4F4;
@@ -176,10 +195,9 @@ body {
 }
 
 #objects button {
-	font-family: 'Poiret One', cursive;
 	width: 60%;
 	font-size: 1.5em;
-	background:  rgba(255, 255, 255, 0.4);
+	background: rgba(255, 255, 255, 0.4);
 	color: #fff;
 	text-align: center;
 	box-shadow: none;
@@ -212,6 +230,16 @@ body {
 	background: #F4F4F4;
 	height: 100%;
 }
+
+#projects {
+	position: absolute;
+}
+
+/*---------------------------
+
+PANEL 2 
+
+----------------------------- */
 
 #panel-2 {
 	height: 850px;

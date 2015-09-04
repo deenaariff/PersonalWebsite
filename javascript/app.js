@@ -1,3 +1,1 @@
-var myApp = angular.module('myApp', ['Controllers'])
-
-	
+myApp = angular.module("myApp",['Controllers']);
