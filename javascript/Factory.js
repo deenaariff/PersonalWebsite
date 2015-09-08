@@ -15,18 +15,7 @@ Services.factory('ProjectsService', function () {
 
 Services.factory('Test', function ($http) {
 
-	var projects = {content:null};
-
-	$http.get('http://localhost:3000/').success(function(data) {
-		projects.content = data;
-	});
-
-	console.log(projects);
-
-	return {
-		getProjects: function () {
-			return projects;
-		}
+	var projects = { 
 	};
 
 });
