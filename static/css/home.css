@@ -21,15 +21,26 @@ body {
 }
 
 @font-face {
-    url('../fonts/Gotham-Light.otlf')  format('truetype'), 
+    url('../fonts/Gotham-Light.otf')  format('truetype'), 
     font-family: 'Gotham-Light';
+}
+
+#panel-header{
+	height: 10%;
+	display: inline-block;
+	background-image: url(../images/triangles.png);
+	text-align: center;
+}
+
+#panel-header {
+	color: #fff;
+	font-size: 0.4em;
 }
 
 
 #navbar {
 	text-align: center;
 	height: 80px;
-	background-color: red; 
 	color: #1A1A1A;
     position: fixed;
     z-index: 100;
@@ -53,7 +64,7 @@ body {
 
 #navbar button:hover {
     background-color: #fff;
-    color: #FD334F;
+    color: #c43b7f;
 }
 
 #navbar button:focus {
@@ -61,7 +72,7 @@ body {
 }
 
 #navbar #login {
-	background-color: #1CAC78;
+	background-image: url(../images/triangles.png);
 	color: #fff;
 }
 
@@ -93,20 +104,11 @@ body {
      background:  rgba(255, 255, 255, 0.8);
  }
 
-#panel-header {
-	text-align: center;
-	background-color: #F4F4F4;
-	color: #1A1A1A;
-    height: 7vw;
-    font-size: 1em;
-    height: auto;
-}
-
 
 #intro-info { 
     text-align: center;
 	height: auto;
-    background: #1A1A1A;
+    background: #120121;
 	background-repeat: no-repeat;
 	background-size: 100%;
 	height: 60vw;
@@ -161,22 +163,27 @@ body {
 
 #about p {
 	font-size: 1em;
-	text-align: center;
+	text-align: justify;
 	padding: 5%;
 }
 
 /*------------------------------
 
-PANEL 1
+PANEL 1 - PROJECTS
 
 -------------------------------*/
 
 #panel-1 {
 	height: 850px; 
     background:  #F4F4F4;
+    display: block;
 	background-repeat: no-repeat;
 	background-size: 100%;
 	height: 50vw;
+}
+
+#project h1 {
+	color: #c43b7f;
 }
 
 #objects {
@@ -190,37 +197,38 @@ PANEL 1
 #objects ul {
 	margin-top: 10%;
 	width: 100%;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
 	height: 80%;
 	margin-bottom: 10%;
 }
 
 #objects button {
-	width: 60%;
+	width: 100%;
 	font-size: 1.5em;
+	display: block;
 	background: rgba(255, 255, 255, 0.4);
 	color: #fff;
 	text-align: center;
 	box-shadow: none;
-	padding: 0;
+	margin: 2px;
 	border: none;
 
 }
 
 #objects button:hover {
 	color: #fff;
-    background: #FD334F;
+    background: #c43b7f;
 }
 
-#panel-header{
-	height: 10%;
-	display: inline-block;
-	background-color: #FD334F;	
-}
-
-#panel-header {
+#objects button:focus {
 	color: #fff;
-	font-size: 0.4em;
+    background: #c43b7f;
+    outline: none;
 }
+
+
 
 #title1 {
 	
@@ -237,12 +245,12 @@ PANEL 1
 
 /*---------------------------
 
-PANEL 2 
+PANEL 2  - DESIGNS 
 
 ----------------------------- */
 
 #panel-2 {
-	height: 850px;
+	display: block;
 	background: #1A1A1A;
 	background-repeat: no-repeat;
 	background-size: 100%;
