@@ -1,13 +1,12 @@
-html {
-   
+html {   
 }
 
 ::selection {
-  background: #FD334F; /* WebKit/Blink Browsers */
+  background: #fff; /* WebKit/Blink Browsers */
 }
 
 body {
-	font-family: Gotham-Light;
+	font-family: 'Gotham-Light';
 }
 
 @font-face {
@@ -25,105 +24,63 @@ body {
     font-family: 'Gotham-Light';
 }
 
+/*------------------------------
+
+HEADER
+
+-------------------------------*/
+
 #panel-header{
 	height: 10%;
-	display: inline-block;
-	background-image: url(../images/triangles.png);
+	display: block;
+	background-color: #0097A7;
 	text-align: center;
-}
-
-#panel-header {
 	color: #fff;
 	font-size: 0.4em;
 }
 
+/*------------------------------
 
-#navbar {
-	text-align: center;
-	height: 80px;
-	color: #1A1A1A;
-    position: fixed;
-    z-index: 100;
-    display: inline-block;
-    width: 100%;
-    font-size: 1em;
-    text-align: center;
-}
+NAVBAR
 
-#navbar button {
-	background:  #fff;
-	font-size: 1em;
-    height: 100%;
-    color: #1A1A1A;
-    border: none;
-}
+-------------------------------*/
 
-#navbar img {
-	height: 90px;
-}
-
-#navbar button:hover {
-    background-color: #fff;
-    color: #c43b7f;
-}
-
-#navbar button:focus {
-    outline: 0;
-}
-
-#navbar #login {
-	background-image: url(../images/triangles.png);
+.navbar li {
+	font-size: 1.5em;
 	color: #fff;
 }
 
-/*
-#navbar #login:hover {
-	background-color: #000000;
-	color: #fff;
+.navbar .navbar-default .navbar-fixed-top .navbar-inner .container-fluid {
+    background-color: #455A64;
+    background-image: none;
+    background-repeat: none;
 }
-*/
 
-.btnHollow {
-	 background: #FD334F;
-     height:  40px;
-     line-height:  40px;
-     display:  inline-block;
-     float:  none;
-     text-align:  center;
-     width:  160px;
-     padding:  0px!important;
-     margin-right: 0.5px;
-     margin-left: 0.5px;
-     font-size:  20px;
-     color:  #fff;
- }
+.navbar img {
+	height: 50px;
+}
 
-.btnHollow:hover  {
-     color:  #fff;
-     text-decoration: none;
-     background:  rgba(255, 255, 255, 0.8);
- }
 
+/*------------------------------
+
+INTRO - LANDING
+
+-------------------------------*/
 
 #intro-info { 
     text-align: center;
-	height: auto;
-    background: #120121;
+    background: #607D8B;
 	background-repeat: no-repeat;
 	background-size: 100%;
-	height: 60vw;
-    padding-top: 8%;
+	height: auto;
+	display: block;
+    padding: 4%;
+    padding-top: 7%;
 	filter: grayscale(100%);
 }
-
-.hello {
-	display: block;
-}
-
 #intro-info img {
-	margin-top: 12%;
 	border-radius: 60%;
-	border: 3px solid #1A2129;
+	border: 3px solid #455A64;
 	width: 40%;
 	height: auto;
 	text-align: center;
@@ -136,8 +93,15 @@ body {
 	padding: 1%;
 }
 
+#intro-info #about h1 {
+	font-size: 3em;
+	color: #FFC107;
+	display: block;
+	padding: 1%;
+}
+
 #intro-info p {
-	color: #efefef;
+	color: #CFD8DC;
 	font-size: 2.5em;
 }
 
@@ -162,7 +126,7 @@ body {
 }
 
 #about p {
-	font-size: 1em;
+	font-size: 1.2em;
 	text-align: justify;
 	padding: 5%;
 }
@@ -174,27 +138,31 @@ PANEL 1 - PROJECTS
 -------------------------------*/
 
 #panel-1 {
-	height: 850px; 
-    background:  #F4F4F4;
+    background:  #fff;
     display: block;
 	background-repeat: no-repeat;
 	background-size: 100%;
-	height: 50vw;
+	min-height: 50vw;
+	height: auto;
 }
 
 #project h1 {
-	color: #c43b7f;
+	color: #212121;
 }
 
-#objects {
+#title1 {
+	text-align: center;
+	color: #fff;
+	font-size: 0.4em;
+}
+
+#projectList {
 	display: inline-block;
 	height: 100%;
-	background-image: url('../images/bridge.jpg');
-	background-repeat: none;
 	background-size: 100%;
 }
 
-#objects ul {
+#projectList ul {
 	margin-top: 10%;
 	width: 100%;
 	width: 60%;
@@ -204,12 +172,11 @@ PANEL 1 - PROJECTS
 	margin-bottom: 10%;
 }
 
-#objects button {
+#projectList button {
 	width: 100%;
 	font-size: 1.5em;
 	display: block;
-	background: rgba(255, 255, 255, 0.4);
-	color: #fff;
+	color: #607D8B;
 	text-align: center;
 	box-shadow: none;
 	margin: 2px;
@@ -217,31 +184,16 @@ PANEL 1 - PROJECTS
 
 }
 
-#objects button:hover {
-	color: #fff;
-    background: #c43b7f;
+#projectList button:hover {
+	color: #FFC107;
 }
 
-#objects button:focus {
-	color: #fff;
-    background: #c43b7f;
-    outline: none;
-}
-
-
-
-#title1 {
-	
-}
 
 #description {
 	background: #F4F4F4;
 	height: 100%;
 }
 
-#projects {
-	position: absolute;
-}
 
 /*---------------------------
 
@@ -251,9 +203,7 @@ PANEL 2  - DESIGNS
 
 #panel-2 {
 	display: block;
-	background: #1A1A1A;
-	background-repeat: no-repeat;
-	background-size: 100%;
+	background: #B2EBF2;
 	height: 48vw;
 }
 
@@ -276,8 +226,38 @@ PANEL 2  - DESIGNS
 
 #content2 {
 	height: 100%;
-    width: 100%
+    width: 100%;
 }
+
+#design {
+	padding: 10%;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+}
+
+
+#panel-2 #design img { 
+	margin-top: 3%;
+	height: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#panel-2 #design h1 { 
+	margin-top: 5%;
+	font-size: 2em;
+}
+
+#panel-2#design.ng-enter h1 {
+	animation: fadeIn 1s;
+}
+
+/*---------------------------
+
+PANEL 3 - CONTACT
+
+----------------------------- */
 
 #panel-3 {
 	height: 850px;
@@ -292,3 +272,5 @@ PANEL 2  - DESIGNS
 	color: #ffffff;	
 	font-size: 400%;
 }
+
+
