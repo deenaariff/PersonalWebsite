@@ -19,8 +19,43 @@ Controllers.controller('MainCtrl', function($scope, ProjectsService, Test) {
         {name:'Email', link: "https://facebook.com/deen.aariff"},
     ];
 
-    // getJSON
-   	$scope.projects = Test.getProjects();
+    $scope.projects = ProjectsService.getProjects();
+    $scope.currentProject = 0;
+
+    $scope.designs = ProjectsService.getDesigns();
+    $scope.currentDesign = 0;
+
+
+    $scope.display = function(index) { 
+        $scope.projects[$scope.currentProject].status = false; 
+        $scope.projects[index].status = true;
+        $scope.currentProject = index;
+    };
+
+    $scope.slideShow = function () {
+        if ($scope.currentDesign === Design.length-1)
+            $scope.currentDesign = 0;
+        else 
+            $scope.currentDesign = $scope.currentDesign + 1;
+        $timeout(slideShow, 2000);
+    }
+
+    function slideRight (position) {
+        console.log(designs.length);
+        if (position === (designs.length-1))
+            position = 0;
+        else 
+            position= position + 1;
+        return position;
+    };
+
+    function slideLeft (position) {
+        if (position === 0)
+            position = (designs.length-1);
+        else 
+            position = position - 1;
+        return position;
+    };
 
 });
 

@@ -1,13 +1,8 @@
-html {   
-}
+/*------------------------------
 
-::selection {
-  background: #fff; /* WebKit/Blink Browsers */
-}
+Yellow: #FFC107;
 
-body {
-	font-family: 'Gotham-Light';
-}
+-------------------------------*/
 
 @font-face {
     url('../fonts/Chelsea.ttf')  format('truetype'), 
@@ -15,13 +10,25 @@ body {
 }
 
 @font-face {
-    url('../fonts/Gotham-Medium.otf')  format('truetype'), 
-    font-family: 'Gotham-Medium';
+    src: url('../fonts/Gotham-Bold.otf');
+    font-family: Gotham-Bold;
 }
 
 @font-face {
-    url('../fonts/Gotham-Light.otf')  format('truetype'), 
-    font-family: 'Gotham-Light';
+    src: url('../fonts/Gotham-Light.otf');
+    font-family: Gotham-Light;
+}
+
+html {   
+}
+
+::selection {
+  background: #fff; /* WebKit/Blink Browsers */
+}
+
+
+body {
+	font-family: Gotham-Light;
 }
 
 /*------------------------------
@@ -33,7 +40,7 @@ HEADER
 #panel-header{
 	height: 10%;
 	display: block;
-	background-color: #0097A7;
+	background-color: #009688;
 	text-align: center;
 	color: #fff;
 	font-size: 0.4em;
@@ -69,7 +76,7 @@ INTRO - LANDING
 
 #intro-info { 
     text-align: center;
-    background: #607D8B;
+    background: #009688;
 	background-repeat: no-repeat;
 	background-size: 100%;
 	height: auto;
@@ -80,7 +87,7 @@ INTRO - LANDING
 }
 #intro-info img {
 	border-radius: 60%;
-	border: 3px solid #455A64;
+	border: 3px solid #00796B;
 	width: 40%;
 	height: auto;
 	text-align: center;
@@ -97,11 +104,12 @@ INTRO - LANDING
 	font-size: 3em;
 	color: #FFC107;
 	display: block;
+	font-family: Gotham-Bold;
 	padding: 1%;
 }
 
 #intro-info p {
-	color: #CFD8DC;
+	color: #B2DFDB;
 	font-size: 2.5em;
 }
 
@@ -131,6 +139,15 @@ INTRO - LANDING
 	padding: 5%;
 }
 
+#about button {
+	outline: none;
+	border: 1px solid #FFC107;
+	background: none;
+	color: #FFC107;
+	font-size: 1.4em;
+	padding: 4px;
+}
+
 /*------------------------------
 
 PANEL 1 - PROJECTS
@@ -138,16 +155,31 @@ PANEL 1 - PROJECTS
 -------------------------------*/
 
 #panel-1 {
-    background:  #fff;
+    background:  #B2DFDB;
     display: block;
 	background-repeat: no-repeat;
 	background-size: 100%;
-	min-height: 50vw;
 	height: auto;
+	min-height: 48vw;
+}
+
+#panel-1.ng-show-add {
+    -webkit-animation: fadeIn 2.5s;
+    animation: fadeIn 2.5s;
+    display: block !important;
+}
+
+#panel-1 p {
+	font-size: 1.2em;
+	text-align: justify;
+	padding: 5%;
+	color: #00796B;
 }
 
 #project h1 {
-	color: #212121;
+	color: #009688;
+	text-align: center;
+	font-family: Gotham-Bold;
 }
 
 #title1 {
@@ -165,29 +197,54 @@ PANEL 1 - PROJECTS
 #projectList ul {
 	margin-top: 10%;
 	width: 100%;
-	width: 60%;
+	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
 	height: 80%;
 	margin-bottom: 10%;
+	display: table;
+	vertical-align: middle;
+}
+
+#projectList h1 {
+	color: #009688;
+	text-align: center;
+}
+
+#projects h1 {
+	color: #009688;
+	text-align: center;
+}
+
+#projects img {
+	text-align: center;
+	max-height: 250px;
+	margin: 3%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#projectList li {
+	display: block;
+	color: #009688;
+	font-size: 1.8em;
 }
 
 #projectList button {
-	width: 100%;
-	font-size: 1.5em;
-	display: block;
-	color: #607D8B;
-	text-align: center;
-	box-shadow: none;
-	margin: 2px;
+	background: none;
 	border: none;
-
+	outline: none;
 }
 
-#projectList button:hover {
+#projectList li:hover  {
+	color: #00796B;
+}
+
+#projectList li:focus {
 	color: #FFC107;
+	border-top: 1px solid #607D8B;
+	border-bottom: 1px solid #607D8B;
 }
-
 
 #description {
 	background: #F4F4F4;
@@ -203,14 +260,21 @@ PANEL 2  - DESIGNS
 
 #panel-2 {
 	display: block;
-	background: #B2EBF2;
+	background: #EDF9F8;
 	height: 48vw;
 }
 
+#panel-2 p {
+	font-size: 1.2em;
+	text-align: justify;
+	padding: 5%;
+	color: #009688;
+}
 
 #panel-2 h1{
-	color: #ffffff;	
+	color: #00796B;	
 	font-size: 400%;
+	text-align: center;
 }
 
 #switcher2 {
@@ -230,28 +294,37 @@ PANEL 2  - DESIGNS
 }
 
 #design {
-	padding: 10%;
 	height: 100%;
-	width: 100%;
-	text-align: center;
+	width: 65%;
 }
-
 
 #panel-2 #design img { 
 	margin-top: 3%;
-	height: 80%;
-	margin-left: auto;
-	margin-right: auto;
+	max-width: 100%;
+	max-height: 80%;
+	text-align: center;
 }
 
 #panel-2 #design h1 { 
 	margin-top: 5%;
 	font-size: 2em;
+	color: #009688;
 }
 
-#panel-2#design.ng-enter h1 {
-	animation: fadeIn 1s;
+#panel-2 ul {
+	height: 100%;
+	width: 100%;
 }
+
+#panel-2 ul button {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#panel-2 ul div {
+	display: inline-block;
+}
+
 
 /*---------------------------
 
