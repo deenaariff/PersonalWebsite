@@ -34,11 +34,18 @@
 
         <!-- Styles -->
 
+
         <link rel="stylesheet" href="../css/bootstrap-3.3.5-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="../css/animate.css">
         <link rel="stylesheet" type="text/css" href="../css/hover.css">
         <link rel="stylesheet" type="text/css" href="../css/home.css">
         <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+
+        <script src="../../Modules/wow.js"></script>
+              <script>
+              new WOW().init();
+              </script>
 
     </head>
 
@@ -74,19 +81,27 @@
 		<!-- Intro --> 
 
 		<div id = "intro-info" class = "col-xs-12" ng-controller='MainCtrl as main'>
-            <div class = "col-xs-12 col-md-6 animated slideInLeft">
+            <div class = "col-xs-12 col-md-6 wow slideInLeft">
 			     <img src="../images/hacktx2.jpg"</img>
 			     <h1>Deen Aariff</h1>
                  <p>Student | Programmer | Techie</p>
             </div>
-            <div class = "col-xs-12 col-md-6 animated slideInRight" id = "about">
+            <div class = "col-xs-12 col-md-6 wow slideInRight" id = "about">
                 <h1> Hey There! </h1>
                 <p>
                      I&#39m a programmer, technology enthusiast, and all around nerd who loves to create and learn new things. Feel free to poke around and use any of my code/designs for your own purposes. I&#39ve also lent my services as both a volunteer and for hire in the past, and my clients have great things to say about me! If you would like to contact me about a project, connect with me on LinkedIn or drop me an email at aariff.deen@gmail.com. I also love to meet new people, so get in touch with me via Facebook if you want to chat!
                 </p>
-                <ul>
-                    <button> My Resume </button>
-                    <button> My Blog </button>
+            </div>
+            <div class = "col-xs-12 landing wow slideInUp">
+                <ul class = "buttons">
+                    <ul class = "button">
+                        <i class="fa fa-file-text fa-4x" style="color: #FFC107;"></i>
+                        <p> My Resume </p>
+                    </ul>
+                    <ul class = "button">
+                        <i class="fa fa-user fa-4x" style="color: #FFC107;"></i>
+                        <p> My Blog </p>
+                    </ul>
                 </ul>
             </div>
 		</div>	
@@ -95,7 +110,7 @@
 		<!-- Panel 1-->
 
 		<div class = "col-xs-12" id = "panel-1" id = "projects" ng-controller='MainCtrl as main'>
-            <div class = "col-xs-12 col-md-6" id = "projectList">
+            <div class = "col-xs-12 col-md-6 wow fadeIn" id = "projectList">
                 <h1> {{ HeaderOne }}</h1>
                 <p> I take great pride in my projects; both, the ones that I produce independently and in collaboration with other developers. While, I program everyday and have a  produced many small projects, the ones that you see are the ones which I wish to showcase. Explore, to your hearts content! Feel free to reuse any of the code that I have produced, and let me know if it's become of any use to you. 
                 </p>
@@ -108,7 +123,7 @@
             <div class = "col-xs-12 col-md-6" >
                 <div id = "projects" ng-repeat = "project in projects" ng-show = "project.status" >
                     <h1 id = "projectName">{{ project.name }}</h1>
-                    <iframe ng-show="project.video" width="400" height="200" src="{{project.video}}" frameborder="0" allowfullscreen></iframe>
+                    <iframe width="400px" height="200px" src="{{project.video}}" frameborder="0" allowfullscreen></iframe>
                     <img ng-show="project.image" src = "../images/Projects/{{project.image}}"></img>
                     <p id = "projectDescription">{{ project.description }}</p>
                 </div>
@@ -121,15 +136,15 @@
 
 		<!-- Panel 2-->
 
-		<div class="col-xs-12" id = "panel-2" ng-init = "slide = 0" ng-controller='MainCtrl as main'>
+		<div class="col-xs-12 wow fadeIn" id = "panel-2" ng-init = "slide = 0" ng-controller='MainCtrl as main'>
             <div class = "col-xs-12 col-md-8"  id = "design" ng-repeat = "design in designs" ng-show = "design.id === currentDesign"> 
                     <img src = "../images/Designs/{{design.url}}"></img>
                     <h1> {{design.name}} </h1>
             </div>
-            <div class = "col-xs-12 col-md-4">
+            <div class = "col-xs-12 col-md-4 wow fadeIn">
                 <h1> {{ HeaderTwo }} </h2>
                 <p>
-                    Programming has taught me so many things: the most important being how to learn new things. Design, is a hobby that I picked up along my programming journey. It&#39s a lot of fun, and great way to be creative and keep innovating. Here are a few of my designs that I&#39ve created. If you&#39re interested, take a click on the button to play a slideshow of my work!
+                    Programming has taught me so many things: the most important being how to learn new things. Design, is a hobby that I picked up along my programming journey. It&#39s a lot of fun, and great way to be creative and keep innovating. Here are a few of my designs that I&#39ve created. If you&#39re interested, click on the button to play a slideshow of my work!
                 </p>
                 <button ng-click = "slideshow()">Start Slideshow</button>
             </div>
@@ -143,11 +158,13 @@
 
 		<!-- Panel 3 -->
 			
-        <div  id = "panel-3">
-			<div class = "col-xs-7" id="content">
-			</div>
-            <div class = "col-xs-5" id="content">
-			</div>	
+        <div class = "col-xs-12" id = "panel-3">
+			<ul class = "wow slideInUp">
+                <i class="fa fa-facebook fa-5x hvr-grow" style="color: #FFC107;"></i>
+                <i class="fa fa-twitter fa-5x hvr-grow" style="color: #FFC107;"></i>
+                <i class="fa fa-linkedin fa-5x hvr-grow" style="color: #FFC107;"></i>
+                <i class="fa fa-envelope fa-5x hvr-grow" style="color: #FFC107;"></i>
+            </ul>	
         </div>
 
     </body>

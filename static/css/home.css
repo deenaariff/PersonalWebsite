@@ -148,6 +148,20 @@ INTRO - LANDING
 	padding: 4px;
 }
 
+.landing p {
+	color: #FFC107;
+	font-size: 1.4em;
+}
+
+.landing ul {
+	display: inline-block;
+}
+
+.buttons ul {
+	display: block;
+}
+
+
 /*------------------------------
 
 PANEL 1 - PROJECTS
@@ -226,7 +240,7 @@ PANEL 1 - PROJECTS
 
 #projectList li {
 	display: block;
-	color: #009688;
+	color: #00796B;
 	font-size: 1.8em;
 }
 
@@ -237,7 +251,7 @@ PANEL 1 - PROJECTS
 }
 
 #projectList li:hover  {
-	color: #00796B;
+	color: #009688;
 }
 
 #projectList li:focus {
@@ -325,6 +339,15 @@ PANEL 2  - DESIGNS
 	display: inline-block;
 }
 
+#panel-2 button {
+	color: #009688;
+	font-size: 1.2em;
+	border: #009688 1px solid;
+	background: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 
 /*---------------------------
 
@@ -333,13 +356,21 @@ PANEL 3 - CONTACT
 ----------------------------- */
 
 #panel-3 {
-	height: 850px;
-    background: #F1F1F1;
+    background-color: #009688;
 	/*background-image: url(../images/book.jpeg);*/
-	background-repeat: no-repeat;
-	background-size: 100%;
-	height: 40vw;
+	height: 20vw;
 }
+
+#panel-3 ul {
+	text-align: center;
+	vertical-align: middle;
+}
+
+#panel-3 i {
+	margin: 6%;
+	display: inline-block;
+}
+
 
 #panel-3 h1{
 	color: #ffffff;	

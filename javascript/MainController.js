@@ -10,15 +10,7 @@ Controllers.controller('MainCtrl', function($scope, ProjectsService, Test) {
         {name:'Design'},
         {name:'Contact'},
     ];
-
-    $scope.links = [
-        {name:'LinkedIn', link: "LinkedIn.com"},
-        {name:'GitHub', link: "Github.com/deenaariff"},
-        {name:'Youtube', link: "youtube.com"},
-        {name:'Facebook', link: "https://facebook.com/deen.aariff"},
-        {name:'Email', link: "https://facebook.com/deen.aariff"},
-    ];
-
+    
     $scope.projects = ProjectsService.getProjects();
     $scope.currentProject = 0;
 
@@ -39,23 +31,6 @@ Controllers.controller('MainCtrl', function($scope, ProjectsService, Test) {
             $scope.currentDesign = $scope.currentDesign + 1;
         $timeout(slideShow, 2000);
     }
-
-    function slideRight (position) {
-        console.log(designs.length);
-        if (position === (designs.length-1))
-            position = 0;
-        else 
-            position= position + 1;
-        return position;
-    };
-
-    function slideLeft (position) {
-        if (position === 0)
-            position = (designs.length-1);
-        else 
-            position = position - 1;
-        return position;
-    };
 
 });
 
