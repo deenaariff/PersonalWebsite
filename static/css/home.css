@@ -19,7 +19,8 @@ Yellow: #FFC107;
     font-family: Gotham-Light;
 }
 
-html {   
+html {  
+	background: #009688; 
 }
 
 ::selection {
@@ -28,7 +29,22 @@ html {
 
 
 body {
+	background: #009688;
 	font-family: Gotham-Light;
+}
+
+.ng-enter, .ng-move{
+	-webkit-animation: fadeIn 1s;
+	-moz-animation: fadeIn 1s;
+	-o-animation: fadeIn 1s;
+	animation: fadeIn 1s;
+}
+
+.ng-leave{
+	-webkit-animation: fadeOut 1s;
+	-moz-animation: fadeOut 1s;
+	-o-animation: fadeOut 1s;
+	animation: fadeOut 1s;
 }
 
 /*------------------------------
@@ -52,19 +68,45 @@ NAVBAR
 
 -------------------------------*/
 
-.navbar li {
-	font-size: 1.5em;
-	color: #fff;
+.nav {
+	position: fixed;
+	z-index: 5;
+	width: 100%;
+	height: 100%;
+	background: #FFC107;
+	text-align: center;
 }
 
-.navbar .navbar-default .navbar-fixed-top .navbar-inner .container-fluid {
-    background-color: #455A64;
-    background-image: none;
-    background-repeat: none;
+.nav h1 {
+	font-size: 2.2em;
 }
 
-.navbar img {
-	height: 50px;
+.nav li {
+	display: block;
+	font-size: 1.1em;
+}
+
+.nav i {
+	margin: 2%;
+	color: #009688;
+}
+
+.nav i:hover {
+	color: #00796B;
+}
+
+.navbutton {
+	position: fixed;
+	z-index: 4;
+}
+
+i {
+	margin: 50%;
+	color: #FFC107;
+}
+
+i:hover {
+	color: #00796B;
 }
 
 
@@ -110,7 +152,7 @@ INTRO - LANDING
 
 #intro-info p {
 	color: #B2DFDB;
-	font-size: 2.5em;
+	font-size: 2.1em;
 }
 
 #intro-info a {
@@ -148,17 +190,17 @@ INTRO - LANDING
 	padding: 4px;
 }
 
-.landing p {
-	color: #FFC107;
-	font-size: 1.4em;
+.landing {
+	padding-top: 1%;
 }
 
 .landing ul {
 	display: inline-block;
 }
 
-.buttons ul {
-	display: block;
+.button p {
+	color: #FFC107;
+	font-size: 1.4em;
 }
 
 
@@ -358,7 +400,7 @@ PANEL 3 - CONTACT
 #panel-3 {
     background-color: #009688;
 	/*background-image: url(../images/book.jpeg);*/
-	height: 20vw;
+	height: 10vw;
 }
 
 #panel-3 ul {
@@ -367,7 +409,7 @@ PANEL 3 - CONTACT
 }
 
 #panel-3 i {
-	margin: 6%;
+	margin: 4%;
 	display: inline-block;
 }
 

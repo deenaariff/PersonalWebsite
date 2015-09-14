@@ -10,7 +10,7 @@ Controllers.controller('MainCtrl', function($scope, ProjectsService, Test) {
         {name:'Design'},
         {name:'Contact'},
     ];
-    
+
     $scope.projects = ProjectsService.getProjects();
     $scope.currentProject = 0;
 
@@ -30,6 +30,16 @@ Controllers.controller('MainCtrl', function($scope, ProjectsService, Test) {
         else 
             $scope.currentDesign = $scope.currentDesign + 1;
         $timeout(slideShow, 2000);
+    }
+
+    $scope.navOn = false;
+
+    $scope.showNav = function () {
+        $scope.navOn = true;
+    }
+
+    $scope.hideNav = function () {
+        $scope.navOn = false;
     }
 
 });
