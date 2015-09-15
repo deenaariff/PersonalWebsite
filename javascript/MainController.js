@@ -33,6 +33,7 @@ Controllers.controller('MainCtrl', function($scope, ProjectsService, Test) {
     }
 
     $scope.navOn = false;
+    $scope.resumeOn = false;
 
     $scope.showNav = function () {
         $scope.navOn = true;
@@ -40,6 +41,14 @@ Controllers.controller('MainCtrl', function($scope, ProjectsService, Test) {
 
     $scope.hideNav = function () {
         $scope.navOn = false;
+    }
+
+     $scope.showRes = function () {
+        $scope.resumeOn = true;
+    }
+
+    $scope.hideRes = function () {
+        $scope.resumeOn = false;
     }
 
 });

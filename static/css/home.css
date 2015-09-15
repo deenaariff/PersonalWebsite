@@ -112,6 +112,22 @@ i:hover {
 
 /*------------------------------
 
+RESUME
+
+-------------------------------*/
+
+.resume {
+	position: fixed;
+	z-index: 5;
+	width: 100%;
+	height: 100%;
+	background: #448AFF;
+	text-align: center;
+}
+
+
+/*------------------------------
+
 INTRO - LANDING
 
 -------------------------------*/
@@ -198,9 +214,27 @@ INTRO - LANDING
 	display: inline-block;
 }
 
-.button p {
+.landing .button p {
 	color: #FFC107;
 	font-size: 1.4em;
+}
+
+#intro-info ul {
+ 		display: inline-block;
+        margin: 0;
+        padding: 0;
+        /* For IE, the outcast */
+        zoom:1;
+        *display: inline;
+}
+
+.landing i {
+	margin: 50px;
+	color: #FFC107;
+}
+
+.landing i:hover {
+	color: #00796B;
 }
 
 
