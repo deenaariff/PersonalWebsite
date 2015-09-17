@@ -1,0 +1,23 @@
+{
+  "name": "deenaariff.com",
+  "version": "1.0.0",
+  "description": "Personal Website",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.13.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deenaariff/Personal-Website.git"
+  },
+  "author": "Deen Aariff",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deenaariff/Personal-Website/issues"
+  },
+  "homepage": "https://github.com/deenaariff/Personal-Website#readme"
+}
