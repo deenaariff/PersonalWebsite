@@ -43,7 +43,7 @@ Controllers.controller('MainCtrl', function($scope, ProjectsService, Test) {
         $scope.navOn = false;
     }
 
-     $scope.showRes = function () {
+    $scope.showRes = function () {
         $scope.resumeOn = true;
     }
 

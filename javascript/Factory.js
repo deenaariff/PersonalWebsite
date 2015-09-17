@@ -19,26 +19,29 @@ Services.factory('ProjectsService', function () {
 							status: false
 							
 						},
-						{ 
-							id: 2,
-							name: 'BroOut',
-							link: 'healtest.space',
-							status: false
-						},
 						{
-							id: 3,
+							id: 2,
 							name: 'Smile',
 							link: 'threecoremedia.org',
-							video: 'https://www.youtube.com/embed/lKwhIC6Qv3E',
+							image: 'smile.png',
 							status: false,
 							description: "Smile is a micro donation application that will allow a requestor to request money when she is in a need to raise money quickly (in 2 weeks) to save someone's life. The donors who will have the watch app will be notified about this request and they can choose to donate any amount in the range of 1 to 20 dollars for the cause just by pressing a button.The application uses new watchOS digital crown api to amounts quickly, the ClockKit APIs to display complication on a watch face and let the donor know how much money has been raised, it uses the new animation APIs to notify users how many causes he has contributed to and brought smile to people's life, and it uses BrainTree payment SDK to make the actual donation."
 						},
 						{
-							id: 4,
+							id: 3,
 							name: 'WordBuddy',
 							link: 'threecoremedia.org',
+							image: 'wordBuddy.png',
+							status: false,
+							description: "WordBuddy is extension for text-editors that uses the LeapMotion API to allow users to perform basic text operations through and gestures. The app was developed at HACKTX 2014 using the Java Language. In addition to text-editing operations, WordBuddy can perform thesaurus queries through hand gestures to allow users to easy replace words in their content."
+
+						},
+						{ 
+							id: 4,
+							name: 'BroOut (In Development)',
+							link: 'healtest.space',
 							status: false
-						}
+						},
 				    ]
 
 	var designs = [
