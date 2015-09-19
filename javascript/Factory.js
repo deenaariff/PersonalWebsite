@@ -16,8 +16,8 @@ Services.factory('ProjectsService', function () {
 							name: 'Three Core Media (Website)',
 							link: 'threecoremedia.org',
 							image: 'threecore.png',
-							status: false
-							
+							status: false,
+							description: "Three Core Media is a marketing agency based in Kuala Lumpur, Malaysia. As part of my duties as an intern, I worked to create the company’s website. The site is built using AngularJs, the Jade template engine, and NodeJs. I also worked to create the sites temporary landing page, which is currently inactive."		
 						},
 						{
 							id: 2,
@@ -50,9 +50,129 @@ Services.factory('ProjectsService', function () {
 				 		name: '2014 Horns Link Winner',
 				 		url: 'flag.jpg',
 				 		status: false
+				 	},
+				 	{ 
+				 		id: 1,
+				 		name: 'UT Natural Sciences Council Website',
+				 		url: 'nsc.png',
+				 		status: false
+				 	},
+				 	{ 
+				 		id: 2,
+				 		name: 'App Icon Design',
+				 		url: 'appicon.jpg',
+				 		status: false
 				 	}
 				  ]
 
+	var programs = [
+				 	{
+				 		name: "C++"
+				 	},
+				 	{ 
+						name: "Java"
+				 	},
+				 	{ 
+				 		name: "Python"
+				 	},
+				 	{
+				 		name: "Swift"
+				 	},
+				 	{
+				 		name: "Javascript"
+				 	},
+				 	{
+				 		name: "NodeJs"
+				 	},
+				 	{
+				 		name: "AngularJs"
+				 	},
+				 	{
+				 		name: "jQuery"
+				 	},
+				 	{
+				 		name: "Django"
+				 	},
+				 	{
+				 		name: "HTML 5"
+				 	},
+				 	{
+				 		name: "CSS 3"
+				 	},
+				 	{
+				 		name: "Boostrap"
+				 	},
+				 	{
+				 		name: "Jade"
+				 	},
+				 	{
+				 		name: "WordPress"
+				 	},
+				 	{
+				 		name: "R"
+				 	},
+				 	{
+				 		name: "Matlab"
+				 	},
+				 	{
+				 		name: "SQL"
+				 	},
+				 	{
+				 		name: "JSON"
+				 	},
+				 	{
+				 		name: "Git"
+				 	}
+				  ]
+	var designs = [
+				 	{
+				 		id: 0,
+				 		name: '2014 Horns Link Winner',
+				 		url: 'flag.jpg',
+				 		status: false
+				 	},
+				 	{ 
+				 		id: 1,
+				 		name: 'UT Natural Sciences Council Website',
+				 		url: 'nsc.png',
+				 		status: false
+				 	},
+				 	{ 
+				 		id: 2,
+				 		name: 'App Icon Design',
+				 		url: 'appicon.jpg',
+				 		status: false
+				 	}
+				  ]
+	var experience = [
+					{
+				 		id: 0,
+				 		name: 'Web Developer Intern',
+				 		hire: 'Three Core Media',
+				 		year: '2015',
+				 		status: false
+				 	},
+				 	{
+				 		id: 0,
+				 		name: 'Web Consultant & Developer',
+				 		year: '2015',
+				 		status: false
+				 	},
+				 	{ 
+				 		id: 1,
+				 		name: 'Software Researcher',
+				 		hire: 'Stanford HCI Group',
+				 		year: '2015',
+				 		status: false
+				 	},
+				 	{ 
+				 		id: 2,
+				 		name: 'Software Intern',
+				 		hire: 'TIBCO Software',
+				 		year: '2014',
+				 		status: false
+				 	}
+				  ]
     return {
     	getProjects : function () {
     		return projects;
@@ -60,6 +180,12 @@ Services.factory('ProjectsService', function () {
 
    	    getDesigns : function () {
     		return designs;
+   	    },
+   	    getPrograms : function () {
+    		return programs;
+   	    },
+   	    getExperience : function () {
+    		return experience;
    	    }
    	};
 

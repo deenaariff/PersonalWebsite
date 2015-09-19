@@ -1,6 +1,6 @@
 var Controllers = angular.module('Controllers', ['Services'])
 
-Controllers.controller('MainCtrl', function($scope, ProjectsService, Test) {
+Controllers.controller('MainCtrl', function($scope, $timeout, ProjectsService) {
 	$scope.HeaderOne = "Projects";
 	$scope.HeaderTwo = "Designs";
 	$scope.HeaderThree = "Contact Me";
@@ -17,6 +17,9 @@ Controllers.controller('MainCtrl', function($scope, ProjectsService, Test) {
     $scope.designs = ProjectsService.getDesigns();
     $scope.currentDesign = 0;
 
+    $scope.programs = ProjectsService.getPrograms();
+
+    $scope.experience = ProjectsService.getExperience();
 
     $scope.display = function(index) { 
         $scope.projects[$scope.currentProject].status = false; 
@@ -25,11 +28,18 @@ Controllers.controller('MainCtrl', function($scope, ProjectsService, Test) {
     };
 
     $scope.slideShow = function () {
-        if ($scope.currentDesign === Design.length-1)
+        if ($scope.currentDesign === ($scope.designs.length-1))
             $scope.currentDesign = 0;
         else 
-            $scope.currentDesign = $scope.currentDesign + 1;
-        $timeout(slideShow, 2000);
+            ++$scope.currentDesign;
+        $timeout($scope.slideShow(), 10000);
+    }
+
+     $scope.nextSlide = function () {
+        if ($scope.currentDesign === ($scope.designs.length-1))
+            $scope.currentDesign = 0;
+        else 
+            ++$scope.currentDesign;
     }
 
     $scope.navOn = false;
