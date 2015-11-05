@@ -58,7 +58,7 @@
             <h1> Projects </h1>
             <a href= "#panel-1" ng-repeat = "project in projects" ><li ng-click = "hideNav()" class = "hvr-grow" ng-click = "display(project.id)">{{project.name }}</li></a>
             <h1> Designs </h1>
-            <li ng-click = "hideNav()" class = "hvr-grow">Start Slideshow</li>
+            <a href= "#panel-2" ng-click = "hideNav()" class = "hvr-grow">View Slides</a>
             <h1> Contact </h1>
             <a href="https://github.com/deenaariff"><li class = "hvr-grow">Github</li></a>
             <a href="https://www.linkedin.com/pub/deen-aariff/b7/175/294"<li class = "hvr-grow">LinkedIn</li></a>
@@ -107,15 +107,15 @@
                     <ul class = "buttons">
                         <ul class = "button">
                             <a><i ng-click = "showRes()" class="fa fa-file-text fa-2x" style="color: #FFC107;"></i></a>
-                            <p>Resume</p>
+                            <h2>Resume</h2>
                         </ul>
                         <ul class = "button">
                             <a><i class="fa fa-user fa-2x" style="color: #FFC107;"></i></a>
-                            <p>Blog</p>
+                            <h2>Blog</h2>
                         </ul>
                         <ul class = "button">
                             <a href= "#panel-1"><i href="#panel-1" class="fa fa-arrow-down fa-2x" style="color: #FFC107;"></i></a>
-                            <p>Who Cares</p>
+                            <h2>Explore</h2>
                         </ul>
                     </ul>
                 </div>

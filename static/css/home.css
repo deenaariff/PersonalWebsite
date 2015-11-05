@@ -112,6 +112,21 @@ NAVBAR
 	color: #00796B;
 }
 
+
+.nav a {
+	display: block;
+	font-size: 1.1em;
+	text-decoration: none;
+}
+
+.nav a {
+	color: #009688;
+}
+
+.nav a:hover {
+	color: #00796B;
+}
+
 .navbutton {
 	position: fixed;
 	z-index: 4;
@@ -148,8 +163,8 @@ INTRO - LANDING
 	background-size: 100%;
 	height: auto;
 	display: block;
-    padding: 4%;
     padding-top: 7%;
+    padding-bottom: 2%;
 	filter: grayscale(100%);
 }
 #intro-info img {
@@ -212,20 +227,15 @@ INTRO - LANDING
 	background: none;
 	color: #FFC107;
 	font-size: 1.4em;
-	padding: 4px;
+	padding: 2px;
 }
 
 .landing {
-	padding-top: 1%;
+	padding-top: 5%;
 }
 
 .landing ul {
 	display: inline-block;
-}
-
-.landing .button p {
-	color: #FFC107;
-	font-size: 1.4em;
 }
 
 #intro-info ul {
@@ -237,9 +247,19 @@ INTRO - LANDING
         *display: inline;
 }
 
+.landing .button {
+	margin-left: 100%;
+	margin-right: 100%;
+}
+
 .landing i {
-	margin: 50px;
+	margin: 5%;
 	color: #FFC107;
+}
+
+.landing h2 {
+	font-size: 1.5em;
+	color: #B2DFDB;
 }
 
 .landing i:hover {
@@ -362,6 +382,8 @@ PANEL 2  - DESIGNS
 	display: block;
 	background: #EDF9F8;
 	height: auto;
+	padding-top: 7%;
+	padding-bottom: 7%;
 }
 
 #panel-2 p {
