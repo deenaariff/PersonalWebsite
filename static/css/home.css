@@ -20,7 +20,6 @@ Yellow: #FFC107;
 }
 
 html {  
-	background: #009688; 
 }
 
 ::selection {
@@ -29,7 +28,7 @@ html {
 
 
 body {
-	background: #009688;
+	background: #fff;
 	font-family: Gotham-Light;
 }
 
@@ -160,10 +159,10 @@ INTRO - LANDING
     text-align: center;
 	background-repeat: no-repeat;
 	background-size: 100%;
-	background: -webkit-linear-gradient(left, #7b4397 , #dc2430); /* For Safari 5.1 to 6.0 */
+	background: background: -webkit-linear-gradient(left, #7b4397 , #dc2430); /* For Safari 5.1 to 6.0 */
   	background: -o-linear-gradient(right, #7b4397 , #dc2430); /* For Opera 11.1 to 12.0 */
   	background: -moz-linear-gradient(right, #7b4397 , #dc2430); /* For Firefox 3.6 to 15 */
-  	background: linear-gradient(to right, #7b4397 , #dc2430); /* Standard syntax */
+  	background: linear-gradient(to right, #7b4397 , #dc2430); /* Standard syntax */;
 	height: auto;
 	display: block;
     padding-top: 7%;
@@ -296,11 +295,15 @@ PANEL 1 - PROJECTS
 	font-size: 1.2em;
 	text-align: justify;
 	padding: 5%;
-	color: #136a8a;
+	color: #7b4397;
+}
+
+#panel-1 h1 {
+	color: #7b4397;
 }
 
 #project h1 {
-	color: #136a8a;
+	color: #7b4397;
 	text-align: center;
 	font-family: Gotham-Bold;
 }
@@ -327,10 +330,11 @@ PANEL 1 - PROJECTS
 	margin-bottom: 10%;
 	display: table;
 	vertical-align: middle;
+	color: #7b4397;
 }
 
 #projectList h1 {
-	color: #009688;
+	color: #7b4397;
 	text-align: center;
 }
 
@@ -340,10 +344,10 @@ PANEL 1 - PROJECTS
 }
 
 #projects {
-	background: -webkit-linear-gradient(#136a8a, #267871); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#136a8a, #267871); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#136a8a, #267871); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#136a8a, #267871); /* Standard syntax */
+	background: -webkit-linear-gradient(#B43059, #136a8a); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#B43059, #136a8a); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#B43059, #136a8a); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#B43059, #136a8a); /* Standard syntax */
 	padding-top: 1%;
 	padding-bottom: 1%;
 	margin-top: auto;
@@ -356,7 +360,7 @@ PANEL 1 - PROJECTS
 }
 
 #projects img {
-	text-align: center;
+	text-align: center; 
 	max-height: 250px;
 	margin: 3%;
 	margin-top: 2%;
@@ -413,11 +417,11 @@ PANEL 2  - DESIGNS
 	font-size: 1.2em;
 	text-align: justify;
 	padding: 5%;
-	color: #009688;
+	color: #136a8a;
 }
 
 #panel-2 h1{
-	color: #00796B;	
+	color: #136a8a;	
 	font-size: 400%;
 	text-align: center;
 }
@@ -456,7 +460,7 @@ PANEL 2  - DESIGNS
 #panel-2 #design h1 { 
 	margin-top: 5%;
 	font-size: 2em;
-	color: #009688;
+	color: #136a8a;
 }
 
 #panel-2 ul {
@@ -474,9 +478,9 @@ PANEL 2  - DESIGNS
 }
 
 #panel-2 button {
-	color: #009688;
+	color: #136a8a;
 	font-size: 1.2em;
-	border: #009688 1px solid;
+	border: #136a8a 1px solid;
 	background: none;
 	display:block;
     margin:auto;
@@ -484,7 +488,7 @@ PANEL 2  - DESIGNS
 }
 
 #panel-2 button:hover {
-	background: #009688;
+	background: #136a8a;
 	color: #fff;
 }
 
