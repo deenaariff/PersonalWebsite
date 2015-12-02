@@ -160,7 +160,10 @@ INTRO - LANDING
     text-align: center;
 	background-repeat: no-repeat;
 	background-size: 100%;
-	background-image: url("/static/images/SCU.jpg");
+	background: -webkit-linear-gradient(left, #7b4397 , #dc2430); /* For Safari 5.1 to 6.0 */
+  	background: -o-linear-gradient(right, #7b4397 , #dc2430); /* For Opera 11.1 to 12.0 */
+  	background: -moz-linear-gradient(right, #7b4397 , #dc2430); /* For Firefox 3.6 to 15 */
+  	background: linear-gradient(to right, #7b4397 , #dc2430); /* Standard syntax */
 	height: auto;
 	display: block;
     padding-top: 7%;
@@ -293,11 +296,11 @@ PANEL 1 - PROJECTS
 	font-size: 1.2em;
 	text-align: justify;
 	padding: 5%;
-	color: #00796B;
+	color: #136a8a;
 }
 
 #project h1 {
-	color: #009688;
+	color: #136a8a;
 	text-align: center;
 	font-family: Gotham-Bold;
 }
@@ -332,16 +335,24 @@ PANEL 1 - PROJECTS
 }
 
 #projects h1 {
-	color: #009688;
+	color: #fff;
 	text-align: center;
 }
 
 #projects {
-	background: #efefef;
+	background: -webkit-linear-gradient(#136a8a, #267871); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#136a8a, #267871); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#136a8a, #267871); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#136a8a, #267871); /* Standard syntax */
 	padding-top: 1%;
 	padding-bottom: 1%;
 	margin-top: auto;
+	color: #fff;
 	margin-bottom: auto;
+}
+
+#projects p {
+	color: #fff;
 }
 
 #projects img {
