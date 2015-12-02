@@ -169,7 +169,7 @@ INTRO - LANDING
 }
 #intro-info img {
 	border-radius: 60%;
-	border: 3px solid #00796B;
+	border: 3px solid #fff;
 	width: 40%;
 	height: auto;
 	text-align: center;
@@ -225,7 +225,7 @@ INTRO - LANDING
 	outline: none;
 	border: 1px solid #FFC107;
 	background: none;
-	color: #FFC107;
+	color: #fff;
 	font-size: 1.4em;
 	padding: 2px;
 }
@@ -235,7 +235,6 @@ INTRO - LANDING
 }
 
 .landing ul {
-	display: inline-block;
 }
 
 #intro-info ul {
@@ -244,7 +243,6 @@ INTRO - LANDING
         padding: 0;
         /* For IE, the outcast */
         zoom:1;
-        *display: inline;
 }
 
 .landing .button {
@@ -259,7 +257,7 @@ INTRO - LANDING
 
 .landing h2 {
 	font-size: 1.5em;
-	color: #B2DFDB;
+	color: #fff;
 }
 
 .landing i:hover {
