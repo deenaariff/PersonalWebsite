@@ -158,7 +158,6 @@ INTRO - LANDING
 
 #intro-info { 
     text-align: center;
-    background: #009688;
 	background-repeat: no-repeat;
 	background-size: 100%;
 	height: auto;
@@ -267,6 +266,7 @@ INTRO - LANDING
 }
 
 
+
 /*------------------------------
 
 PANEL 1 - PROJECTS
@@ -274,7 +274,7 @@ PANEL 1 - PROJECTS
 -------------------------------*/
 
 #panel-1 {
-    background:  #B2DFDB;
+    background:  #efefef;
     display: block;
 	background-repeat: no-repeat;
 	background-size: 100%;
