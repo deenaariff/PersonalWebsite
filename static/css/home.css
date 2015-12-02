@@ -160,6 +160,7 @@ INTRO - LANDING
     text-align: center;
 	background-repeat: no-repeat;
 	background-size: 100%;
+	background-image: url("/static/images/SCU.jpg");
 	height: auto;
 	display: block;
     padding-top: 7%;
@@ -190,7 +191,7 @@ INTRO - LANDING
 }
 
 #intro-info p {
-	color: #B2DFDB;
+	color: #fff;
 	font-size: 2.1em;
 }
 
@@ -204,7 +205,7 @@ INTRO - LANDING
 
 #intro-info a:hover {
 	text-decoration: none;
-	color: #FD334F;
+	color: #fff;
 	font-size: 2.2em;
 }
 
@@ -274,7 +275,9 @@ PANEL 1 - PROJECTS
 -------------------------------*/
 
 #panel-1 {
-    background:  #efefef;
+    background: #fff; 
+    padding-top: 1%;
+	padding-bottom: 1%;;
     display: block;
 	background-repeat: no-repeat;
 	background-size: 100%;
@@ -335,13 +338,24 @@ PANEL 1 - PROJECTS
 	text-align: center;
 }
 
+#projects {
+	background: #efefef;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
 #projects img {
 	text-align: center;
 	max-height: 250px;
 	margin: 3%;
+	margin-top: 2%;
+	margin-bottom: 2%;
 	max-width: 500px;
 	display:block;
     margin:auto;
+    border: 2px #000;
 }
 
 #projectList li {
@@ -380,10 +394,10 @@ PANEL 2  - DESIGNS
 
 #panel-2 {
 	display: block;
-	background: #EDF9F8;
+	background: #fff;
 	height: auto;
-	padding-top: 7%;
-	padding-bottom: 7%;
+	padding-top: 2%;
+	padding-bottom: 2%;
 }
 
 #panel-2 p {
