@@ -5,7 +5,7 @@ Yellow: #FFC107;
 -------------------------------*/
 
 @font-face {
-    url('../fonts/Chelsea.ttf')  format('truetype'), 
+    url('../fonts/Chelsea.ttf')  format('truetype'),
     font-family: 'Burner';
 }
 
@@ -19,7 +19,7 @@ Yellow: #FFC107;
     font-family: Gotham-Light;
 }
 
-html {  
+html {
 }
 
 ::selection {
@@ -155,7 +155,7 @@ INTRO - LANDING
 
 -------------------------------*/
 
-#intro-info { 
+#intro-info {
     text-align: center;
 	background-repeat: no-repeat;
 	background-size: 100%;
@@ -275,7 +275,7 @@ PANEL 1 - PROJECTS
 -------------------------------*/
 
 #panel-1 {
-    background: #fff; 
+    background: #fff;
     padding-top: 1%;
 	padding-bottom: 1%;;
     display: block;
@@ -360,7 +360,7 @@ PANEL 1 - PROJECTS
 }
 
 #projects img {
-	text-align: center; 
+	text-align: center;
 	max-height: 250px;
 	margin: 3%;
 	margin-top: 2%;
@@ -373,22 +373,23 @@ PANEL 1 - PROJECTS
 
 #projectList li {
 	display: block;
-	color: #00796B;
+	color: #7b4397;
 	font-size: 1.8em;
 }
 
 #projectList button {
+	color: #7b4397;
 	background: none;
 	border: none;
 	outline: none;
 }
 
 #projectList li:hover  {
-	color: #009688;
+	color: #7b4397;
 }
 
 #projectList li:focus {
-	color: #FFC107;
+	color: #7b4397;
 	border-top: 1px solid #607D8B;
 	border-bottom: 1px solid #607D8B;
 }
@@ -401,7 +402,7 @@ PANEL 1 - PROJECTS
 
 /*---------------------------
 
-PANEL 2  - DESIGNS 
+PANEL 2  - DESIGNS
 
 ----------------------------- */
 
@@ -421,7 +422,7 @@ PANEL 2  - DESIGNS
 }
 
 #panel-2 h1{
-	color: #136a8a;	
+	color: #136a8a;
 	font-size: 400%;
 	text-align: center;
 }
@@ -446,9 +447,9 @@ PANEL 2  - DESIGNS
 	height: 100%;
 }
 
-#panel-2 #design img { 
+#panel-2 #design img {
 	max-width: 80%;
-	max-height: 400px; 
+	max-height: 400px;
 	height: auto;
 	display: block;
 	margin: auto;
@@ -457,7 +458,7 @@ PANEL 2  - DESIGNS
 	text-align: center;
 }
 
-#panel-2 #design h1 { 
+#panel-2 #design h1 {
 	margin-top: 5%;
 	font-size: 2em;
 	color: #136a8a;
@@ -505,7 +506,10 @@ PANEL 3 - CONTACT
 
 #panel-3 {
 	display: block;
-    background-color: #009688;
+    background: -webkit-linear-gradient(#136a8a, #009688); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#136a8a, #009688); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#136a8a, #009688); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#136a8a, #009688); /* Standard syntax */
 	/*background-image: url(../images/book.jpeg);*/
 	height: auto;
 }
@@ -520,10 +524,9 @@ PANEL 3 - CONTACT
 	display: inline-block;
 }
 
-
 #panel-3 h1{
-	color: #ffffff;	
-	font-size: 400%;
+	color: #ffffff;
+	font-size: 2.2em;
+	text-align: center;
+	margin: 20px;
 }
-
-
